@@ -1,0 +1,12 @@
+version: '2.0'
+services:
+  redis:
+    image: redis:alpine
+  reflector:
+    image: dkarlovi/phpredis-reflection:${VERSION}
+    build:
+      context: ./phpredis/${VERSION}
+    volumes:
+      - .:/test
+    working_dir: /test
+    command: sleep 10000

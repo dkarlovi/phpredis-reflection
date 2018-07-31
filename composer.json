@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ocramius/proxy-manager": "^2.2",
+        "roave/better-reflection": "^3.1"
+    }
+}
